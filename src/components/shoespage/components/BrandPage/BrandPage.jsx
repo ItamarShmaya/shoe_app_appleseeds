@@ -5,7 +5,7 @@ import ShoeCard from "../ShoeCard/ShoeCard";
 import EditWindow from "../EditWindow/EditWindow";
 import AddShoe from "../AddShoe/AddShoe";
 import Spinner from "../../../Spinner/Spinner.jsx";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 export default class BrandPage extends React.Component {
   state = {
@@ -78,9 +78,7 @@ export default class BrandPage extends React.Component {
         />
         {this.state.shoesData.length !== 0 ? (
           <div className="shoe-cards-container">{this.renderShoes()}</div>
-        ) : this.state.error ? (
-          <Redirect to="/not-found" />
-        ) : (
+        ) : this.state.error ? null : ( // <Redirect to="/not-found" />
           <Spinner />
         )}
       </>
