@@ -1,0 +1,63 @@
+.edit-window-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.edit-window-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+.edit-window {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(159, 180, 255, 1) 0%,
+    rgba(255, 245, 109, 1) 90%,
+    rgba(153, 255, 205, 1) 100%
+  );
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.edit-form .input-group {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.edit-form .input-group input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+@media all and (max-width: 450px) {
+  .edit-window {
+    height: 60%;
+  }
+
+  .button-group {
+    flex-wrap: wrap;
+  }
+}

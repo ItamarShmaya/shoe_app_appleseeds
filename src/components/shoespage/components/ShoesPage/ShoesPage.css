@@ -1,0 +1,72 @@
+.shoes-sections-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.shoes-sections-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.shoes-sections-container a {
+  width: 100%;
+  height: 25%;
+  border: 2px solid white;
+}
+
+.shoe-section {
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  font-family: "Luckiest Guy", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: #fff;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+}
+
+.flip-flops {
+  background: url("../../../../../public/assets/images/flipflops_bg.jpg") center
+    center/cover;
+}
+
+.nike {
+  background: url("../../../../../public/assets/images/sneakers_bg.png") center
+    center/cover;
+}
+
+.heels {
+  background: url("../../../../../public/assets/images/heels_bg.jpg") center
+    center/cover;
+}
+
+.classic {
+  background: url("../../../../../public/assets/images/classic_bg.png") center
+    center/cover;
+}
+
+@media all and (max-width: 350px) {
+  .shoe-section {
+    font-size: 5rem;
+  }
+}
+@media all and (max-width: 250px) {
+  .shoe-section {
+    font-size: 4rem;
+  }
+}

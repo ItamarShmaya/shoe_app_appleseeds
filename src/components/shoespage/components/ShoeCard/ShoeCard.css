@@ -1,0 +1,31 @@
+.shoe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 60%;
+  border: 1px solid #fff56d;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #000, -1px -1px 2px 1px #000;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.shoe-image img {
+  width: 100%;
+}
+
+.shoe-card:hover {
+  cursor: pointer;
+}
+
+.shoe-card:hover {
+  background-color: #e2e2e2;
+}
+
+.shoe-card:active {
+  box-shadow: 1px 1px 2px 1px #000 inset, -1px -1px 2px 1px #000 inset;
+}

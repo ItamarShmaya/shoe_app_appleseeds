@@ -1,0 +1,63 @@
+.addshoe-form-container {
+  background-color: #99ffcd;
+}
+
+.addshoe-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 12px;
+}
+
+.input-group input {
+  padding: 3px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media all and (max-width: 850px) {
+  .addshoe-form {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 750px) {
+  .addshoe-form {
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    align-items: flex-end;
+  }
+  .button-group {
+    align-self: center;
+  }
+  .input-group input {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .addshoe-form {
+    width: 100%;
+    align-items: center;
+  }
+  .button-group {
+    align-self: center;
+  }
+  .input-group input {
+    width: auto;
+  }
+}

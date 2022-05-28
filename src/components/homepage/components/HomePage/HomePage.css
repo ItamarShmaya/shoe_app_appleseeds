@@ -1,0 +1,38 @@
+.homepage {
+  width: 100%;
+  height: 100vh;
+  background: url("../../../../../public/assets/images/shoes_main_bg.png")
+    no-repeat center center/cover;
+}
+
+.homepage h1 {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 200px;
+  text-align: center;
+}
+
+.homepage .content {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  border: 5px solid gold;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: auto;
+}

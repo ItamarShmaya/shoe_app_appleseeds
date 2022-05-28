@@ -1,0 +1,23 @@
+.shoe-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 2rem;
+  grid-gap: 2rem;
+}
+
+@media all and (max-width: 850px) {
+  .shoe-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media all and (max-width: 650px) {
+  .shoe-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 350px) {
+  .shoe-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
