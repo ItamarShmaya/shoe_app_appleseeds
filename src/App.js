@@ -16,7 +16,7 @@ export default class App extends React.Component {
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route path="/shoes" exact component={ShoesPage} />
-            <Route path="/shoes/:brand" exact component={BrandPage} />
+            <Route path="/shoes/:brand" component={BrandPage} />
             <Route path="/not-found" exact component={PageNotFound} />
             <Redirect to="/not-found" />
           </Switch>
